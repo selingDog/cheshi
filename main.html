@@ -25,7 +25,6 @@
         img {
             width: 40px;
             height: 40px;
-            border-radius: 5px 5px;
         }
 
         .time {
@@ -35,7 +34,6 @@
         }
 
         .h {
-            /* margin-top: 20px; */
             height: 40px;
             display: flex;
             align-items: center;
@@ -45,20 +43,26 @@
         .w1 {
             width: 145px;
             background-color: rgb(160, 234, 109);
+            z-index: 1;
         }
-        .yin{
+
+        .yin {
             width: 210px;
             position: relative;
             right: -280px;
             display: flex;
             justify-content: space-around;
         }
-        .w2{
+
+        .w2 {
             width: 45px;
-            background-color: #ffffff;   
-            margin-top: 2px; 
+            background-color: #ffffff;
+            margin-top: 2px;
+            z-index: 1;
+            position: relative;
         }
-        .shun{
+
+        .shun {
             width: 140px;
             position: relative;
             right: -10px;
@@ -66,11 +70,36 @@
             justify-content: space-around;
             align-items: center;
             height: 66px;
-            margin-top: 12px; 
+            margin-top: 12px;
         }
-        .name{
+
+        .name {
             color: rgb(133, 133, 133);
             font-size: 14px;
+        }
+
+        .box2 {
+            width: 20px;
+            height: 20px;
+            background-color: rgb(160, 234, 109);
+            transform: rotate(45deg);
+            position: absolute;
+            top: 10px;
+            right: 55px;
+        }
+
+        .box3 {
+            width: 20px;
+            height: 20px;
+            background-color: #ffffff;
+            transform: rotate(45deg);
+            position: absolute;
+            top: 35px;
+            right: 62px;
+        }
+
+        .radius {
+            border-radius: 5px 5px;
         }
     </style>
 </head>
@@ -79,19 +108,20 @@
     <div class="box">
         <h5 class="time">14:22</h5>
         <div class="yin">
-            
-            <div class="h w1">
+            <div class="h w1 radius">
                 @single dog 来
             </div>
-            <img src="./img/微信图片_20230817202842.jpg" alt="">
+            <div class="box2"></div>
+            <img src="./img/微信图片_20230817202842.jpg" alt="" class="radius">
         </div>
         <div class="shun">
-            <img src="./img/微信图片_20230817202830.jpg" alt="">
+            <img src="./img/微信图片_20230817202830.jpg" alt="" class="radius">
             <div class="shun2">
                 <span class="name">single dog</span>
-                <div class="h w2">
+                <div class="h w2 radius">
                     好
                 </div>
+                <div class="box3"></div>
             </div>
         </div>
     </div>
