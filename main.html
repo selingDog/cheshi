@@ -5,22 +5,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
+    <style>
+        body {
+            width: 0;
+            height: 0;
+        }
+
+        .box {
+            width: 500px;
+            height: 200px;
+            background-color: rgb(237, 237, 237);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: -100px;
+            margin-left: -250px;
+        }
+
+        img {
+            width: 40px;
+            height: 40px;
+            border-radius: 5px 5px;
+        }
+
+        .time {
+            color: rgb(171, 171, 171);
+            text-align: center;
+            font-weight: normal;
+        }
+
+        .h {
+            /* margin-top: 20px; */
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .w1 {
+            width: 130px;
+            background-color: rgb(160, 234, 109);
+        }
+        .yin{
+            width: 200px;
+            position: relative;
+            right: -290px;
+            display: flex;
+            justify-content: space-around;
+        }
+    </style>
 </head>
 
 <body>
     <div class="box">
-            <span class="html">14:22</span>
+        <h5 class="time">14:22</h5>
         <div class="yin">
-            <img src="./img/微信图片_20230817202842.jpg" alt="">
-            <div class="text">
+            
+            <div class="h w1">
                 @single dog 来
             </div>
+            <img src="./img/微信图片_20230817202842.jpg" alt="">
         </div>
         <div class="shun">
             <img src="./img/微信图片_20230817202830.jpg" alt="">
             <span>single dog</span>
-            <div class="text">
+            <div class="h w2">
                 好
             </div>
         </div>
